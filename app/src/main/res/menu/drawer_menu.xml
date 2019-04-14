@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_upper"
+        >
+        <item android:icon="@drawable/ic_history_black_24dp"
+            android:title="Add Vehicle"
+            android:id="@+id/addvehicle"
+            android:iconTint="@color/history_color"
+            />
+        <item android:icon="@drawable/ic_history_black_24dp"
+            android:title="History"
+            android:id="@+id/History"
+            android:iconTint="@color/history_color"
+            />
+
+
+        <item android:icon="@drawable/bar_chart_icon"
+            android:title="Reports"
+            android:id="@+id/Reports"/>
+
+
+        <item android:icon="@drawable/ic_local_gas_station_blue_24dp"
+            android:title="Where to refuel"
+            android:id="@+id/refuel"/>
+        <item android:icon="@drawable/ic_add_location_black_24dp"
+            android:title="Income Chart"
+            android:id="@+id/incomeChart"/>
+    </group>
+    <group xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/menu_middle"
+            android:checkableBehavior="all"
+            >
+
+        <item android:icon="@drawable/ic_local_gas_station_blue_24dp"
+                    android:title="Refueling"
+                    android:id="@+id/Refueling"/>
+        <item android:icon="@drawable/ic_money_off_black_48dp"
+                    android:title="Expenses"
+                    android:id="@+id/Expenses"/>
+        <item android:icon="@drawable/ic_attach_money_black_24dp"
+                    android:title="Incomes"
+                    android:id="@+id/Income"/>
+        <item android:icon="@drawable/icons8_services_48"
+                    android:title="Services"
+                    android:id="@+id/Services"/>
+        <item android:icon="@drawable/ic_place_black_24dp"
+                    android:title="Routes"
+                    android:id="@+id/Routes"/>
+        <item android:icon="@drawable/ic_access_alarm_black_24dp"
+                    android:title="Reminders"
+                    android:id="@+id/Reminders"/>
+
+    </group>
+    <group xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:checkableBehavior="none"
+        android:id="@+id/menu_bottom"
+        >
+
+        <item android:icon="@drawable/ic_calculator_black_24dp"
+                android:title="Vehicle List"
+                android:id="@+id/F_calculator"/>
+        <item android:icon="@drawable/ic_stars_black_24dp"
+                android:title="Achievements"
+                android:id="@+id/Achievements"/>
+
+    </group>
+    <group xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:checkableBehavior="single"
+        >
+        <item android:icon="@drawable/ic_email_black_24dp"
+            android:title="Contact"
+            android:id="@+id/Contact"/>
+        <item android:icon="@drawable/ic_info_black_24dp"
+            android:title="About"
+            android:id="@+id/about"/>
+    </group>
+</menu>

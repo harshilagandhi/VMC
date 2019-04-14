@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/incomecard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cardrelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/recycleviewbackground"
+            >
+
+            <ImageView
+                android:id="@+id/expenseicon"
+                android:layout_width="54dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/icons8_cost_expense" />
+            <TextView
+                android:id="@+id/fexpenseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expense Date"
+                android:layout_toRightOf="@id/expenseicon"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/expensevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:layout_toRightOf="@id/expenseicon"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@id/fexpenseDate"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/expensetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="expense Type"
+                android:layout_toRightOf="@id/expenseicon"
+                android:layout_below="@id/expensevalue"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:layout_toRightOf="@id/expenseicon"
+                android:layout_below="@id/expensetype"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

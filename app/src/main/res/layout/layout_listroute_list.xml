@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/refuelingid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/recycleviewbackground"
+            >
+
+            <ImageView
+                android:id="@+id/routeicon"
+                android:layout_width="68dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:id="@+id/start_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Location"
+                android:layout_toRightOf="@id/routeicon"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/start_odometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Odometer"
+                android:layout_toRightOf="@id/start_location"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/endLocationr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Location"
+                android:layout_toRightOf="@id/routeicon"
+                android:layout_below="@id/start_location"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/last_odometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/start_odometer"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/endLocationr"
+                android:text="End Odometer"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:layout_toRightOf="@id/routeicon"
+                android:layout_below="@id/endLocationr"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/last_odometer"
+                android:layout_marginLeft="69dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/start_date"
+                android:text="End Date"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/Drawer_layout"
+    >
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        >
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floating_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="387dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            app:menu_fab_label=""
+            app:menu_openDirection="up"
+            app:menu_showShadow="true"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingAction_reminder_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_label="Reminder"
+                app:fab_size="mini"
+                android:src="@drawable/icon_reminder_add"
+                app:fab_progress_backgroundColor="@color/white"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingAction_route_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_label="Route"
+                app:fab_size="mini"
+                android:src="@drawable/icon_route_add"
+                app:fab_progress_backgroundColor="@color/white"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingAction_service_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_label="Services"
+                app:fab_size="mini"
+                android:src="@mipmap/fuel_add"
+                app:fab_progress_backgroundColor="@color/white"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingAction_income_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_label="Income"
+                app:fab_size="mini"
+                android:src="@drawable/icon_expense_add"
+                app:fab_progress_backgroundColor="@color/white"
+
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingAction_expense_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_label="Expense"
+                app:fab_size="mini"
+
+
+                android:backgroundTintMode="screen"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/icon_expense_add"
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/floatingActionButton_fuel_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_gas_add"
+                app:fab_label="Refueling"
+                app:fab_size="mini"
+                android:background="@color/white"
+                />
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+    </RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+</android.support.v4.widget.DrawerLayout>

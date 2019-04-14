@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Information.fuel_add">
+
+    <LinearLayout
+        android:id="@+id/datetimelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:id="@+id/datetime_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dateandtime"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/datetext"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Select date"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/timetext"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Time"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/datetimelayout"/>
+
+    <LinearLayout
+        android:id="@+id/odometerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/datetimelayout"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/odometer_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_format_list_numbered_black_24dp"
+            />
+
+        <EditText
+            android:id="@+id/odometer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:hint="Odometer(KM)"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fuellayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/odometerlayout"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/gasoline_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <Spinner
+            android:id="@+id/fuelspinner"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/addfuel_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/fuellayout"/>
+
+    <LinearLayout
+        android:id="@+id/fuelpricelayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/fuellayout"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/expense_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/rupee_circle"
+            />
+
+        <EditText
+            android:id="@+id/fuelprice"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:hint="Price(L))"
+            android:layout_marginLeft="20dp"
+            />
+
+        <EditText
+            android:id="@+id/totalcost"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:hint="Total Cost"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/liters"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:hint="Liters"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/additionalfuelbutton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/fuelpricelayout"
+        >
+
+        <ImageView
+            android:id="@+id/addfuelbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/addfuel"
+            />
+
+        <TextView
+            android:id="@+id/addfueltext"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Add Fuel"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gasstationlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/additionalfuelbutton"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/gasstationlocation"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_location_on_black_24dp"
+            />
+        <Spinner
+            android:id="@+id/gasstationspinner"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/addgasstation_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/gasstationlayout"/>
+
+    <LinearLayout
+        android:id="@+id/resonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/gasstationlayout"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/reason_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_location_on_black_24dp"
+            />
+        <Spinner
+            android:id="@+id/reason_spinner"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+
+            />
+
+        <ImageView
+            android:id="@+id/addreason_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_add_circle_outline_black_24dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="80dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/resonlayout"/>
+
+    <LinearLayout
+        android:id="@+id/NotesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@id/line"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/note_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_filter_list_black_24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/noteText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:hint="Notes"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NotesLayout"
+        >
+
+        <Button
+            android:id="@+id/addfuelexpensebutton"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttonstyle"
+            android:text="Add Fuel Expense"
+            android:textColor="@color/white"
+
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>

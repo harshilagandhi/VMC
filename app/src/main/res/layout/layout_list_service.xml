@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/servicecard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/cardrelative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/recycleviewbackground"
+            >
+
+            <ImageView
+                android:id="@+id/serviceicon"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/fserviceDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="service Date"
+                android:layout_toRightOf="@id/serviceicon"
+                android:layout_marginLeft="40dp"
+                />
+
+            <TextView
+                android:id="@+id/servicevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Value"
+                android:layout_toRightOf="@id/fserviceDate"
+                android:layout_marginLeft="40dp"
+
+                />
+            <TextView
+                android:id="@+id/servicetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="service Type"
+                android:layout_toRightOf="@id/serviceicon"
+                android:layout_below="@id/fserviceDate"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/Odometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odometer"
+                android:layout_toRightOf="@id/servicetype"
+                android:layout_below="@id/servicevalue"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

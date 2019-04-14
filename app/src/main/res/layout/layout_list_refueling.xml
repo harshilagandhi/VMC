@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/refuelingid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/recycleviewbackground"
+            >
+
+            <ImageView
+                android:id="@+id/refuelingicon"
+                android:layout_width="39dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/fuel_add"
+                />
+
+            <TextView
+                android:id="@+id/fuelDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@id/refuelingicon"
+                android:text="FuelDate"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@id/fuelDate"
+                android:text="Cost"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/fuelOdometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odometer"
+                android:layout_toRightOf="@id/refuelingicon"
+                android:layout_below="@id/fuelDate"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/gasstaion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gas Station"
+                android:layout_toRightOf="@id/fuelOdometer"
+                android:layout_below="@id/cost"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

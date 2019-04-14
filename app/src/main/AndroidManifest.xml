@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.harshil.expensetracking">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="com.androidtutorialpoint.mymapsappsdirection.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/fuel_add"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".reports"
+            android:label="@string/title_activity_reports"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCaCth7uY03etGHEBnrmyWo7WP_LP__9jE" />
+
+        <activity
+            android:name=".where_to_refuel"
+            android:label="@string/title_activity_where_to_refuel" />
+        <activity android:name=".category_add.addIncomeCategory" />
+        <activity
+            android:name=".MainActivity"
+            android:label="History">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".historyActivity"
+            android:label="History" />
+        <activity
+            android:name=".My_places"
+            android:label="My places" />
+        <activity
+            android:name=".refueling"
+            android:label="refueling history" />
+        <activity
+            android:name=".expenses"
+            android:label="Expenses" />
+        <activity
+            android:name=".income"
+            android:label="Income" />
+        <activity
+            android:name=".services"
+            android:label="Services" />
+        <activity
+            android:name=".routes"
+            android:label="Routes" />
+        <activity
+            android:name=".reminders"
+            android:label="Reminders" />
+        <activity
+            android:name=".Vehicle_List"
+            android:label="Vehicle List" />
+        <activity
+            android:name=".achievements"
+            android:label="Achievements" />
+        <activity
+            android:name=".translation"
+            android:label="Translation" />
+        <activity
+            android:name=".Contact"
+            android:label="Contact" />
+        <activity
+            android:name=".about"
+            android:label="About Us" />
+        <activity
+            android:name=".Add_Information.fuel_add"
+            android:label="Add Fueling Details" />
+        <activity
+            android:name=".Add_Information.income_add"
+            android:label="Income" />
+        <activity
+            android:name=".Add_Information.expense_add"
+            android:label="Expense" />
+        <activity
+            android:name=".Add_Information.route_add"
+            android:label="Add Route" />
+        <activity
+            android:name=".Add_Information.service_add"
+            android:label="Add services" />
+        <activity
+            android:name=".Add_Information.reminder_add"
+            android:label="Set a reminder" />
+        <activity
+            android:name=".category_add.addExpenseCategory"
+            android:label="Add Expense Category" />
+        <activity android:name=".Add_Information.add_vehicle" />
+    </application>
+
+</manifest>
